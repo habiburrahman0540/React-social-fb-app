@@ -1,0 +1,39 @@
+.rightbar{
+    flex: 3.5;
+}
+.rightbarwrapper{
+    padding: 20px;
+}
+.birthdaySection {
+    display: flex;
+    align-items: center;
+}
+img.birthdayImg {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+.Sponsorer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+img.Sponsorer-img {
+    width: 150px;
+    height: 130px;
+    margin: 20px 10px 10px 0;
+    border-radius: 3px;
+}
+span.Sponsorer-content {
+    line-height: 25px;
+}
+span.Sponsorer-link {
+    display: block;
+}
+span.Sponsorer-link a {
+    color: black;
+    text-decoration: none;
+}
+.sponsorerHr {
+    margin: 15px 0;
+}
