@@ -42,11 +42,9 @@ span.post-top__left__time {
     color: #121212;
 }
 .post-center {
-    margin: 12px -11px;
+    margin: 12px 0;
 }
-span.post-center__text {
-    margin: 15px;
-}
+
 img.post-center__img {
     width: 100%;
     border-radius: 5px;
@@ -74,7 +72,7 @@ img.likeIcon {
 span.likeCounter {
     font-size: 14px;
     cursor: pointer;
-}
+} 
 span.post-comments {
     font-size: 15px;
     cursor: pointer;

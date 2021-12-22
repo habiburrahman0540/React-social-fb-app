@@ -2,6 +2,9 @@
     flex: 3;
     height: calc(100vh - 50px);
     overflow-y: hidden;
+    position: sticky;
+    top: 50px;
+    
 }
 .sidebar:hover{
     overflow-y: scroll;
@@ -38,19 +41,28 @@
 }
 .sidebarList__item:hover{
     background-color: rgb(212, 203, 203);
-   
     border-radius: 12px;
 }
 .sidebarIcon {
     margin-right: 15px;
 }
-.sidebarButton {
-    border: none;
-    padding: 10px;
-    width: 150px;
-    border-radius: 5px;
-    font-weight: 500;
+.seemore {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 15px 8px;
     cursor: pointer;
+}
+.seemore:hover{
+    background-color: rgb(212, 203, 203);
+    border-radius: 12px;
+}
+.seemoreIcon {
+        margin-right: 15px;
+        background-color: #575d63;
+        color: #fff;
+        border-radius: 50%;
+        padding: 2px;
+    
 }
 .sidebarHr {
     margin: 20px 0px;
@@ -63,14 +75,18 @@
 .sidebarFriendList__item {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    padding: 15px 0 15px 8px;
     cursor: pointer;
 }
-
+.sidebarFriendList__item:hover{
+    background-color: rgb(212, 203, 203);
+    border-radius: 12px;
+}
 .sidebarFriendList__item__img{
     width: 35px;
     height: 35px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 10px;
+    cursor: pointer;
 }

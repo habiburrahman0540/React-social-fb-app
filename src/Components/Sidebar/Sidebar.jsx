@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Sidebar.css"
 import {RssFeed,Chat,VideoLabel,Group,Bookmark,HelpOutline, WorkOutline,Event, School} from "@material-ui/icons"
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 const Sidebar = () => {
     return (
         <div className='sidebar'>
@@ -48,7 +49,10 @@ const Sidebar = () => {
                             <span className='sidebarList__item__text'>Course</span>
                         </li>
                 </ul>
-                <button className='sidebarButton'>Show more</button>
+                <div className="seemore">
+                <KeyboardArrowDownIcon  className='seemoreIcon'/>
+                <span className='seemoreText'>See more</span>
+                </div>
                 <hr  className='sidebarHr'/>
                 <ul className='sidebarFriendList'>
                     <li className='sidebarFriendList__item'>

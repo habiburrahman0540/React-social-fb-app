@@ -3,25 +3,52 @@
 }
 .rightbarwrapper{
     padding: 20px;
+    margin-left: 20px;
 }
 .birthdaySection {
+    padding: 12px;
+    box-shadow: 0 0 16px -8px rgb(0 0 0 / 68%);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.birthday {
     display: flex;
     align-items: center;
+
 }
 img.birthdayImg {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
+}
+.birthdayText {
+    display: block;
+    margin: 8px 0;
+    padding: 10px;
+}
+.birthdayText:hover{
+    background-color: rgb(212, 203, 203);
+    border-radius: 12px;
+}
+span.sponsorerTitle {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
 }
 .Sponsorer {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    padding: 10px;
+}
+.Sponsorer:hover{
+    background-color: rgb(212, 203, 203);
+    border-radius: 12px;
 }
 img.Sponsorer-img {
     width: 150px;
     height: 130px;
-    margin: 20px 10px 10px 0;
+    margin: 0px 12px 0px 0;
     border-radius: 3px;
 }
 span.Sponsorer-content {
@@ -36,4 +63,26 @@ span.Sponsorer-link a {
 }
 .sponsorerHr {
     margin: 15px 0;
+}
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span.contact__left {
+    font-weight: 600;
+    font-size: 16px;
+}
+.contact__right {
+    margin-right: 15px;
+}
+.contact__right__more {
+    cursor: pointer;
+    padding: 2px 4px;
+}
+.contact__right:hover {
+    background-color: #4B4C4F;
+    border-radius: 50%;
+    color: #fff;
+    
 }
