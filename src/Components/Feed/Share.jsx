@@ -1,9 +1,10 @@
 import React from 'react'
 import "./Share.css"
 import {PermMedia,Label,Room,EmojiEmotions} from "@material-ui/icons"
+import Card from '../UID/Card'
 const Share = () => {
     return (
-        <div className='share'>
+     
             <div className="shareWrapper">
                 <div className="share-top">
                     <img className='share-top__profile__img' src="/assets/person/1.jpeg" alt="" />
@@ -32,7 +33,7 @@ const Share = () => {
                     <button className='share-button'>share</button>
                 </div>
             </div>
-        </div>
+       
     )
 }
 

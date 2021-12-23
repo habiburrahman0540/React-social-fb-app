@@ -86,9 +86,19 @@ a.menu-item__link {
     width: 100%;
     background-color: #18191A;
     color: #fff;
-    height: 100vh;
+    min-height: 100vh;
 }
 .content {
     max-width: 940px;
     margin: auto;
+}
+.content {
+    display: flex;
+}
+.profile-left {
+    flex: 5;
+    
+}
+.profile-right {
+    flex: 7;
 }

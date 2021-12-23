@@ -1,11 +1,18 @@
 import { MoreHoriz } from '@material-ui/icons'
-import React from 'react'
+import React, { useState } from 'react'
 import "./Post.css"
 import {Users} from "../../dummyData"
+import  Card from '../UID/Card'
 const Post = (props) => {
     let user = Users.filter(x=> x.id === props.post.userId);
+    const [like,setLike] = useState(props.post.like);
+    const [isLike,setIsLike] = useState(false)
+    const likeHandle = ()=>{
+        setLike(isLike ? like-1 : like+1)
+        setIsLike(!isLike)
+    }
     return (
-        <div className='post'>
+        
             <div className="postWrapper">
                 <div className="post-top">
                     <div className="post-top__left">
@@ -23,9 +30,9 @@ const Post = (props) => {
                 </div>
                 <div className="post-bottom">
                     <div className="post-bottom__left">
-                        <img className='likeIcon' src="assets/like.png" alt="" />
-                        <img className='likeIcon' src="assets/heart.png" alt="" />
-                        <span className='likeCounter'>{props.post.like}</span>
+                        <img className='likeIcon' src="assets/like.png" onClick={likeHandle} alt="" />
+                        <img className='likeIcon' src="assets/heart.png" onClick={likeHandle} alt="" />
+                        <span className='likeCounter'>{like}</span>
                     </div>
                     <div className="post-bottom__right">
                         <span className='post-comments'>
@@ -35,7 +42,7 @@ const Post = (props) => {
                     </div>
                 </div>
             </div>
-        </div>
+       
     )
 }
 

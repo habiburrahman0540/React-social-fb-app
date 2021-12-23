@@ -2,17 +2,19 @@ import React from 'react'
 import "./Rightbar.css"
 import {MoreHoriz} from "@material-ui/icons"
 import OnlineFiend from './OnlineFriend'
+import {Users} from "../../dummyData"
+import Card from '../UID/Card'
 const Rightbar = () => {
     return (
         <div className='rightbar'>
             <div className="rightbarwrapper">
-                <div className="birthdaySection">
+                <Card>
                     <div className="birthday">
                     <img className='birthdayImg' src="assets/gift.png" alt="" />
                     <span className='birthdayTitle'>Birthdays</span>
                     </div>
                     <span className='birthdayText'><b> Pola Poster </b> and <b> 3 other friends </b> have birthday today.</span>
-                </div>
+                </Card>
                 <hr className='sponsorerHr'/> 
                 <span className='sponsorerTitle'>Sponsored</span>
                 <div className="Sponsorer">
@@ -30,20 +32,10 @@ const Rightbar = () => {
                     </div>
                 </div>
                 <ul className='friendlist'>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
-                    <OnlineFiend/>
+                    {Users.map(user=>(
+                    <OnlineFiend key={user.id} user={user}/>
+                    ))}
+                   
                     </ul>
                     
             </div>

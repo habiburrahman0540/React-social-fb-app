@@ -1,7 +1,9 @@
 import React from 'react'
 import "./Sidebar.css"
+import CloseFriend from "./CloseFriend"
 import {RssFeed,Chat,VideoLabel,Group,Bookmark,HelpOutline, WorkOutline,Event, School} from "@material-ui/icons"
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import {Users} from "../../dummyData"
 const Sidebar = () => {
     return (
         <div className='sidebar'>
@@ -55,30 +57,9 @@ const Sidebar = () => {
                 </div>
                 <hr  className='sidebarHr'/>
                 <ul className='sidebarFriendList'>
-                    <li className='sidebarFriendList__item'>
-                        <img src="/assets/person/2.jpeg" className='sidebarFriendList__item__img' alt="" />
-                        <span className='sidebarFriendList__item__name'>Jon deo</span>
-                    </li>
-                    <li className='sidebarFriendList__item'>
-                        <img src="/assets/person/2.jpeg" className='sidebarFriendList__item__img' alt="" />
-                        <span className='sidebarFriendList__item__name'>Jon deo</span>
-                    </li>
-                    <li className='sidebarFriendList__item'>
-                        <img src="/assets/person/2.jpeg" className='sidebarFriendList__item__img' alt="" />
-                        <span className='sidebarFriendList__item__name'>Jon deo</span>
-                    </li>
-                    <li className='sidebarFriendList__item'>
-                        <img src="/assets/person/2.jpeg" className='sidebarFriendList__item__img' alt="" />
-                        <span className='sidebarFriendList__item__name'>Jon deo</span>
-                    </li>
-                    <li className='sidebarFriendList__item'>
-                        <img src="/assets/person/2.jpeg" className='sidebarFriendList__item__img' alt="" />
-                        <span className='sidebarFriendList__item__name'>Jon deo</span>
-                    </li>
-                    <li className='sidebarFriendList__item'>
-                        <img src="/assets/person/2.jpeg" className='sidebarFriendList__item__img' alt="" />
-                        <span className='sidebarFriendList__item__name'>Jon deo</span>
-                    </li>
+                    {Users.map(user=>(
+                        <CloseFriend key={user.id} user={user}/>
+                    ))}
                 </ul>
             </div>
         </div>

@@ -1,7 +1,7 @@
 
 import HomePage from "./Pages/Home/HomePage"
 import { Routes, Route, Link } from "react-router-dom";
-import ProfilePage from "./Pages/ProfilePage"
+import ProfilePage from "./Pages/Profile/ProfilePage"
 function App() {
   return (
     <div >

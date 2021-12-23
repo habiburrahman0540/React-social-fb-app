@@ -1,6 +1,10 @@
 import React from 'react'
-import Topbar from "../Components/Top-bar/TopBar"
+import Topbar from "../../Components/Top-bar/TopBar"
 import "./ProfilePage.css"
+import Card from "../../Components/UID/Card"
+import Share from '../../Components/Feed/Share'
+import {Posts} from "../../dummyData"
+import Post from "../../Components/Feed/Post"
 const ProfilePage = () => {
     return (
         <div>
@@ -36,7 +40,30 @@ const ProfilePage = () => {
             </div>
             <div className="profile-content">
                 <div className="content">
-                    hhdgkdgh
+                   <div className="profile-left">
+                       <Card className="vcard">hildren prop to pass children 
+                       We recommend that such hildren prop to pass children 
+                       We recommend that such hildren prop to pass children 
+                       We recommend that such hildren prop to pass children 
+                       We recommend that such hildren prop to pass children 
+                       We recommend that such hildren prop to pass children 
+                       We recommend that such hildren prop to pass children 
+                       We recommend that such hildren prop to pass children 
+                       We recommend that such 
+                       </Card>
+                   </div>
+                   <div className="profile-right">
+                        <Card className="vcard">
+                        <Share/>
+                        </Card>
+                        <div className="profile-feed">
+                        {Posts.map(x=>(
+                        <Card className="vcard">
+                            <Post key={x.id} post= {x}/>
+                        </Card>
+                    ))}
+                    </div>
+                    </div>
                 </div>
             </div>
 

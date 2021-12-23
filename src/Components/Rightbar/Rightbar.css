@@ -5,12 +5,7 @@
     padding: 20px;
     margin-left: 20px;
 }
-.birthdaySection {
-    padding: 12px;
-    box-shadow: 0 0 16px -8px rgb(0 0 0 / 68%);
-    border-radius: 10px;
-    margin-bottom: 25px;
-}
+
 .birthday {
     display: flex;
     align-items: center;
@@ -85,4 +80,9 @@ span.contact__left {
     border-radius: 50%;
     color: #fff;
     
+}
+ul.friendlist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

@@ -1,0 +1,15 @@
+.card{
+    min-height: 65px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 16px -8px rgba(0,0,0,0.68);
+    box-shadow: 0 0 16px -8px rgba(0,0,0,0.68);
+    color: #000;
+    
+    
+}
+.vcard{
+    color: #fff;
+    background-color: #242526;
+}
