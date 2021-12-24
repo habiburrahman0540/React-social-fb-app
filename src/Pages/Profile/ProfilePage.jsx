@@ -5,6 +5,9 @@ import Card from "../../Components/UID/Card"
 import Share from '../../Components/Feed/Share'
 import {Posts} from "../../dummyData"
 import Post from "../../Components/Feed/Post"
+import {RssFeed} from "@material-ui/icons"
+import HomeIcon from '@mui/icons-material/Home';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 const ProfilePage = () => {
     return (
         <div>
@@ -41,15 +44,22 @@ const ProfilePage = () => {
             <div className="profile-content">
                 <div className="content">
                    <div className="profile-left">
-                       <Card className="vcard">hildren prop to pass children 
-                       We recommend that such hildren prop to pass children 
-                       We recommend that such hildren prop to pass children 
-                       We recommend that such hildren prop to pass children 
-                       We recommend that such hildren prop to pass children 
-                       We recommend that such hildren prop to pass children 
-                       We recommend that such hildren prop to pass children 
-                       We recommend that such hildren prop to pass children 
-                       We recommend that such 
+                       <Card className="vcard">
+                           <span>Intro</span>
+                           <ul className="sidebarList">
+                                 <li className='sidebarList__item'>
+                                    <HomeIcon className='sidebarIcon'/>
+                                    <span className='sidebarList__item__text'>Lives in Chandpur, Chittagong, Bangladesh</span>
+                                </li>
+                                <li className='sidebarList__item'>
+                                    <AccessTimeIcon className='sidebarIcon'/>
+                                    <span className='sidebarList__item__text'>Joined April 2010</span>
+                                </li>
+                                <li className='sidebarList__item'>
+                                    <RssFeed className='sidebarIcon'/>
+                                    <span className='sidebarList__item__text'>Followed by 203 people</span>
+                                </li>
+                </ul>
                        </Card>
                    </div>
                    <div className="profile-right">
